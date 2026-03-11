@@ -8,38 +8,39 @@ This system provides a **centralized employee directory** with powerful search, 
 
 # 🚀 Features
 
-- 🔍 **Search employees** by name or employee ID  
-- 📊 **Filter employees** by Active / Exited status  
-- 🔃 **Sort employees** by name or joining date  
-- 📄 **Detailed employee profile view** with role and CTC information  
-- ⚡ **Fast REST API responses** powered by Django  
-- 📱 **Responsive UI** built with React  
-- 📊 **Employee status tracking** for workforce insights  
+* 🔍 Search employees by **name or employee ID**
+* 📊 Filter employees by **active / exited status**
+* 🔃 Sort employees by **name or joining date**
+* 📄 View employee details in a clean interface
+* ⚡ Fast backend API responses
+* 📱 Responsive UI
 
 ---
 
 # 🧰 Tech Stack
 
 ## Frontend
-- React.js  
-- JavaScript  
-- HTML  
-- CSS  
-- Chart.js  
+
+* React.js
+* HTML
+* CSS
+* JavaScript
 
 ## Backend
-- Django  
-- Python  
-- Django REST API  
+
+* Django
+* Python
+* REST APIs
 
 ## Database
-- SQLite  
 
-## Tools & Development
-- Git & GitHub  
-- VS Code  
-- Postman  
-- npm  
+* MySQL
+
+## Tools
+
+* Git & GitHub
+* VS Code
+* Postman
 
 ---
 
@@ -60,9 +61,8 @@ org-employee-directory
 │   ├── components
 │   └── styles
 │
-├── Employee_Directory_Presentation.pptx
-├── README.md
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
 
 ---
@@ -114,7 +114,8 @@ http://localhost:5173
 
 # 🔌 Example API Endpoints
 
-### Get All Employees
+### Get Employees
+
 ```
 GET /api/employees
 ```
@@ -124,14 +125,10 @@ GET /api/employees
 GET /api/employees?search=John
 ```
 
-### Filter Employees by Status
+### Filter Employees
+
 ```
 GET /api/employees?status=active
-```
-
-### Employee Profile
-```
-GET /api/employees/profile/{emp_id}
 ```
 
 ---
@@ -140,43 +137,30 @@ GET /api/employees/profile/{emp_id}
 
 This system can be used by **HR teams and organizations** to:
 
-- Maintain employee records  
-- Quickly search employee details  
-- Track employee joining and exit status  
-- Monitor workforce structure  
-- Manage employee information efficiently  
-
----
-
-# 📑 Project Presentation
-
-A detailed explanation of this project is available in the presentation:
-
-📊 **Employee_Directory_Presentation.pptx**
+* Maintain employee records
+* Search employees instantly
+* Track employment status
+* Manage workforce data efficiently
 
 ---
 
 # 🔮 Future Improvements
 
-- 🔐 Authentication & login system  
-- 👨‍💼 Admin dashboard  
-- 📑 Pagination for large datasets  
-- 🔑 Role-based access control  
-- ☁️ Cloud deployment (AWS / Render)  
-- 📈 Employee analytics dashboard  
-- 📧 Email notifications  
+* Authentication system
+* Admin dashboard
+* Pagination
+* Role-based access
+* Cloud deployment
+* Analytics dashboard
 
 ---
 
 # 👨‍💻 Author
 
-**Bharath**
+**Chakradhar**
 
-B.Tech Computer Science Student  
-Python • Django • React • Web Development  
-
-GitHub:  
-https://github.com/Bharath-87
+Full Stack Developer
+Python • React • AI Projects
 
 ---
 
