@@ -21,10 +21,11 @@ from .views import (
     AlertsView,
     # Reports
     JoinersLeaversReportView,
+    home,
 )
 
 urlpatterns = [
-
+    path('', home),
     # ── Health ────────────────────────────────────────────────────────────
     path('health/', HealthView.as_view()),
 
