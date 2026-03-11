@@ -9,11 +9,11 @@ This system provides a **centralized employee directory** with powerful search, 
 # 🚀 Features
 
 * 🔍 Search employees by **name or employee ID**
-* 📊 Filter employees by **active / exited status**
+* 📊 Filter employees by **Active / Exited status**
 * 🔃 Sort employees by **name or joining date**
-* 📄 View employee details in a clean interface
-* ⚡ Fast backend API responses
-* 📱 Responsive UI
+* 📄 View detailed **employee profile information**
+* ⚡ Fast backend **REST API responses**
+* 📱 Fully **responsive user interface**
 
 ---
 
@@ -44,6 +44,34 @@ This system provides a **centralized employee directory** with powerful search, 
 
 ---
 
+# 📸 Application Screenshots
+
+### Dashboard
+
+<img src="Screenshots/Dashboard.png" width="48%"> <img src="Screenshots/Dashboard2.png" width="48%">
+
+### Employee Insights
+
+<img src="Screenshots/J&V_Graph.png" width="48%"> <img src="Screenshots/Joiners_and_Leavers.png" width="48%">
+
+### Notifications
+
+<img src="Screenshots/Notifications.png" width="48%">
+
+### Employee Onboarding
+
+<img src="Screenshots/Onboarding.png" width="48%"> <img src="Screenshots/Onboarding2.png" width="48%">
+
+### Employee Profile
+
+<img src="Screenshots/Profile.png" width="48%">
+
+### Role Tracking
+
+<img src="Screenshots/Role_Tracking.png" width="48%">
+
+---
+
 # 📂 Project Structure
 
 ```
@@ -60,6 +88,8 @@ org-employee-directory
 │   ├── pages
 │   ├── components
 │   └── styles
+│
+├── Screenshots
 │
 ├── .gitignore
 └── README.md
@@ -121,6 +151,7 @@ GET /api/employees
 ```
 
 ### Search Employees
+
 ```
 GET /api/employees?search=John
 ```
@@ -139,7 +170,7 @@ This system can be used by **HR teams and organizations** to:
 
 * Maintain employee records
 * Search employees instantly
-* Track employment status
+* Track employee joining and exit status
 * Manage workforce data efficiently
 
 ---
@@ -149,18 +180,21 @@ This system can be used by **HR teams and organizations** to:
 * Authentication system
 * Admin dashboard
 * Pagination
-* Role-based access
+* Role-based access control
 * Cloud deployment
-* Analytics dashboard
+* Employee analytics dashboard
 
 ---
 
 # 👨‍💻 Author
 
-**Chakradhar**
+**Bharath**
 
-Full Stack Developer
-Python • React • AI Projects
+B.Tech Computer Science Student
+Python • Django • React • Web Development
+
+GitHub:
+https://github.com/Bharath-87
 
 ---
 
