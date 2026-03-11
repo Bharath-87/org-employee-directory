@@ -1,7 +1,5 @@
 from django.urls import path
 from .views import (
-    # Home
-    home,
 
     # Health
     HealthView,
@@ -36,9 +34,6 @@ from .views import (
 
 urlpatterns = [
 
-    # Home
-    path('', home),
-
     # Health
     path('health/', HealthView.as_view()),
 
@@ -58,7 +53,7 @@ urlpatterns = [
     path('onboarding/<str:emp_id>/init/', OnboardingInitView.as_view()),
     path('onboarding/<str:emp_id>/', OnboardingChecklistView.as_view()),
 
-    # Auth
+    # Authentication
     path('auth/login/', ApiLoginView.as_view()),
     path('auth/register/', ApiRegisterView.as_view()),
     path('auth/logout/', ApiLogoutView.as_view()),
