@@ -70,3 +70,8 @@ urlpatterns = [
     # ── Reports (Joiners/Leavers) ────────────────────────────
     path('reports/joiners-leavers/', JoinersLeaversReportView.as_view()),
 ]
+from .views import home
+
+urlpatterns = [
+    path('', home),
+]

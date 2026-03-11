@@ -827,3 +827,7 @@ class JoinersLeaversReportView(View):
         ], key=lambda x: x["month_key"])
 
         return JsonResponse({"data": result}, safe=False)
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Org Employee Directory Backend Running 🚀")
