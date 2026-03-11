@@ -1,46 +1,45 @@
 # 🏢 Org Employee Directory
 
-A full-stack web application that helps organizations manage and search employee information quickly and efficiently.
+A **full-stack Employee Management Web Application** built using **React and Django** that allows organizations to manage, search, and view employee information efficiently.
 
-This system provides a centralized employee directory with search, filters, and sorting features to improve accessibility of employee data.
+This system provides a **centralized employee directory** with powerful search, filtering, and sorting features to help HR teams quickly access workforce data.
 
 ---
 
 # 🚀 Features
 
-* 🔍 Search employees by **name or employee ID**
-* 📊 Filter employees by **active / exited status**
-* 🔃 Sort employees by **name or joining date**
-* 📄 View employee details in a clean interface
-* ⚡ Fast backend API responses
-* 📱 Responsive UI
+- 🔍 **Search employees** by name or employee ID  
+- 📊 **Filter employees** by Active / Exited status  
+- 🔃 **Sort employees** by name or joining date  
+- 📄 **Detailed employee profile view** with role and CTC information  
+- ⚡ **Fast REST API responses** powered by Django  
+- 📱 **Responsive UI** built with React  
+- 📊 **Employee status tracking** for workforce insights  
 
 ---
 
 # 🧰 Tech Stack
 
 ## Frontend
-
-* React.js
-* HTML
-* CSS
-* JavaScript
+- React.js  
+- JavaScript  
+- HTML  
+- CSS  
+- Chart.js  
 
 ## Backend
-
-* Django
-* Python
-* REST APIs
+- Django  
+- Python  
+- Django REST API  
 
 ## Database
+- SQLite  
 
-* MySQL
-
-## Tools
-
-* Git & GitHub
-* VS Code
-* Postman
+## Tools & Development
+- Git & GitHub  
+- VS Code  
+- Postman  
+- npm  
 
 ---
 
@@ -52,33 +51,36 @@ org-employee-directory
 ├── backend
 │   ├── manage.py
 │   ├── requirements.txt
-│   └── django apps
+│   ├── backend
+│   └── hackathon (Django app)
 │
 ├── frontend
 │   ├── src
+│   ├── pages
 │   ├── components
-│   └── pages
+│   └── styles
 │
-├── .gitignore
-└── README.md
+├── Employee_Directory_Presentation.pptx
+├── README.md
+└── .gitignore
 ```
 
 ---
 
 # ⚙️ Installation Guide
 
-## 1️⃣ Clone the repository
+## 1️⃣ Clone the Repository
 
-```
-git clone https://github.com/vcrchakri/org-employee-directory.git
+```bash
+git clone https://github.com/Bharath-87/org-employee-directory.git
 cd org-employee-directory
 ```
 
 ---
 
-# Backend Setup
+# 🖥 Backend Setup (Django)
 
-```
+```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate
@@ -86,7 +88,7 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-Server runs on
+Backend runs at:
 
 ```
 http://127.0.0.1:8000
@@ -94,75 +96,90 @@ http://127.0.0.1:8000
 
 ---
 
-# Frontend Setup
+# 💻 Frontend Setup (React)
 
-```
+```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
-Frontend runs on
+Frontend runs at:
 
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
 ---
 
 # 🔌 Example API Endpoints
 
-### Get Employees
-
+### Get All Employees
 ```
 GET /api/employees
 ```
 
 ### Search Employees
-
 ```
 GET /api/employees?search=John
 ```
 
-### Filter Employees
-
+### Filter Employees by Status
 ```
 GET /api/employees?status=active
+```
+
+### Employee Profile
+```
+GET /api/employees/profile/{emp_id}
 ```
 
 ---
 
 # 📊 Use Case
 
-HR teams and organizations can use this system to:
+This system can be used by **HR teams and organizations** to:
 
-* Maintain employee records
-* Search employees instantly
-* Track employment status
-* Manage workforce data efficiently
+- Maintain employee records  
+- Quickly search employee details  
+- Track employee joining and exit status  
+- Monitor workforce structure  
+- Manage employee information efficiently  
+
+---
+
+# 📑 Project Presentation
+
+A detailed explanation of this project is available in the presentation:
+
+📊 **Employee_Directory_Presentation.pptx**
 
 ---
 
 # 🔮 Future Improvements
 
-* Authentication system
-* Admin dashboard
-* Pagination
-* Role-based access
-* Cloud deployment
-* Analytics dashboard
+- 🔐 Authentication & login system  
+- 👨‍💼 Admin dashboard  
+- 📑 Pagination for large datasets  
+- 🔑 Role-based access control  
+- ☁️ Cloud deployment (AWS / Render)  
+- 📈 Employee analytics dashboard  
+- 📧 Email notifications  
 
 ---
 
 # 👨‍💻 Author
 
-**Chakradhar**
+**Bharath**
 
-Full Stack Developer
-Python • React • AI Projects
+B.Tech Computer Science Student  
+Python • Django • React • Web Development  
+
+GitHub:  
+https://github.com/Bharath-87
 
 ---
 
 # ⭐ Support
 
-If you found this project useful, give it a star on GitHub!
+If you found this project useful, please **give it a ⭐ on GitHub**.
