@@ -1,29 +1,14 @@
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
 from django import db
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-def _load_env_file(env_path: Path) -> None:
-    if not env_path.exists():
-        return
-
-    for raw_line in env_path.read_text(encoding='utf-8').splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith('#'):
-            continue
-        if '=' not in line:
-            continue
-
-        key, value = line.split('=', 1)
-        key = key.strip()
-        value = value.strip().strip('"').strip("'")
-        if key:
-            os.environ.setdefault(key, value)
-
-_load_env_file(BASE_DIR / '.env')
+# Load environment variables from .env file
+load_dotenv(BASE_DIR.parent / ".env")
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY')
@@ -43,12 +28,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',   # ✅ keep here
+    'corsheaders',
     'hackathon',
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',             # ✅ MUST be first
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -56,8 +41,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # ❌ removed duplicate corsheaders.middleware.CorsMiddleware
-    # ❌ removed hackathon.middleware.CorsMiddleware (conflicts)
 ]
 
 ROOT_URLCONF = 'backend.urls'
@@ -80,16 +63,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
+
 DATABASES = {
  'default': {
      'ENGINE': 'django.db.backends.mysql',
-     'NAME': 'org_employee_directory',
-     'USER': 'root',
-     'PASSWORD': 'Bharath@123@',
-     'HOST': 'localhost',
-     'PORT': '3306',
+     'NAME': os.getenv('DB_NAME'),
+     'USER': os.getenv('DB_USER'),
+     'PASSWORD': os.getenv('DB_PASSWORD'),
+     'HOST': os.getenv('DB_HOST'),
+     'PORT': os.getenv('DB_PORT'),
  }
 }
+
 # Internationalization
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
@@ -100,6 +85,7 @@ USE_TZ = True
 # Static files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR.parent / 'frontend']
+
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
