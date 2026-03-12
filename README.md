@@ -2,17 +2,17 @@
 
 A **full-stack Employee Management Web Application** built using **React and Django** that allows organizations to manage, search, and view employee information efficiently.
 
-This system provides a **centralized employee directory** with powerful search, filtering, and sorting features to help HR teams quickly access workforce data.
+This system provides a **centralized employee directory** with powerful **search, filtering, and sorting features** to help HR teams quickly access workforce data.
 
 ---
 
 # 🚀 Features
 
-* 🔍 Search employees by **name or employee ID**
+* 🔍 Search employees by **Name or Employee ID**
 * 📊 Filter employees by **Active / Exited status**
-* 🔃 Sort employees by **name or joining date**
-* 📄 View detailed **employee profile information**
-* ⚡ Fast backend **REST API responses**
+* 🔃 Sort employees by **Name or Joining Date**
+* 📄 View detailed **Employee Profile information**
+* ⚡ Fast **Django REST API** responses
 * 📱 Fully **responsive user interface**
 
 ---
@@ -81,7 +81,7 @@ org-employee-directory
 │   ├── manage.py
 │   ├── requirements.txt
 │   ├── backend
-│   └── hackathon (Django app)
+│   └── hackathon
 │
 ├── frontend
 │   ├── src
@@ -142,6 +142,24 @@ http://localhost:5173
 
 ---
 
+# 🔐 Environment Variables Setup
+
+Create a `.env` file in the **project root**:
+
+```
+SECRET_KEY=your_django_secret_key
+
+DB_NAME=org_employee_directory
+DB_USER=root
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_PORT=3306
+```
+
+⚠️ The `.env` file is ignored by Git for security reasons.
+
+---
+
 # 🔌 Example API Endpoints
 
 ### Get Employees
@@ -193,7 +211,7 @@ This system can be used by **HR teams and organizations** to:
 B.Tech Computer Science Student
 Python • Django • React • Web Development
 
-GitHub:
+GitHub
 https://github.com/Bharath-87
 
 ---
